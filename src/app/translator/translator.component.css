@@ -1,0 +1,40 @@
+#translator_button_in, #translator_button_out {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#input_textarea, #output_textarea {
+  padding: 5px 5px;
+  width: 95%;
+  min-width: 50%;
+  min-height: 150px;
+  outline: none;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+
+#translator_container {
+  margin-left: 20px;
+  margin-right: 20px;
+}

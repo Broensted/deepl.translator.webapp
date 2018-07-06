@@ -1,24 +1,25 @@
-<div class="textarea_translate_from">
-  <div>
-    <label for="translate_input">Translate</label>
-    <textarea id="translate_input" name="translate_input"
-              maxlength="25000"
-              wrap="soft">
-      Textarea with sizing and wrap attribute
-      (try values of hard, soft, and off to see how it affects wrapping).
-      The maximum number of characters is constrained to 200 by the maxlength attribute.
-        </textarea>
+<div id="translator_container" class="translator_container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="input-group mb-3">
+        <span id="translator_button_in" class="input-group-text">Input</span>
+        <button id="button" type="button" class="btn btn-dark">PRESS FOR TRANSLATION</button>
+      </div>
+      <textarea id="input_textarea" placeholder="Enter your text for translation here..." type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-defa"></textarea>
+    </div>
+    <div class="col-sm">
+      <div class="input-group mb-3">
+        <span id="translator_button_out" class="input-group-text">Output</span>
+      </div>
+      <textarea id="output_textarea" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-defa"></textarea>
+    </div>
   </div>
 </div>
-<div class="textarea_translate_to">
-  <div>
-    <label for="translate_output">Translate</label>
-    <textarea id="translate_output" name="translate_output"
-              maxlength="25000"
-              wrap="soft">
-      Textarea with sizing and wrap attribute
-      (try values of hard, soft, and off to see how it affects wrapping).
-      The maximum number of characters is constrained to 200 by the maxlength attribute.
-        </textarea>
-  </div>
-</div>
+
+
+
+
+
+

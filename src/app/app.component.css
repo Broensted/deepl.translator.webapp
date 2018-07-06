@@ -1,2 +1,16 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-@import "~font-awesome/css/font-awesome.css";
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://www.mhp.com/fileadmin/www.mhp.com/assets/images/home-main-slider/MHP_Slider_Kapitel_1920x960px.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
