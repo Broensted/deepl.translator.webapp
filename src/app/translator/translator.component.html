@@ -1,12 +1,24 @@
-<fieldset>
-  <legend>Login details:</legend>
-
-  <div class="username">
-    <label for="uname">Username:</label>
-    <input type="text" id="uname" name="uname" required
-           minLength="4" maxLength="8"
-           placeholder="4 to 8 characters long" />
-    <span class="validity"></span>
+<div class="textarea_translate_from">
+  <div>
+    <label for="translate_input">Translate</label>
+    <textarea id="translate_input" name="translate_input"
+              maxlength="25000"
+              wrap="soft">
+      Textarea with sizing and wrap attribute
+      (try values of hard, soft, and off to see how it affects wrapping).
+      The maximum number of characters is constrained to 200 by the maxlength attribute.
+        </textarea>
   </div>
-
-</fieldset>
+</div>
+<div class="textarea_translate_to">
+  <div>
+    <label for="translate_output">Translate</label>
+    <textarea id="translate_output" name="translate_output"
+              maxlength="25000"
+              wrap="soft">
+      Textarea with sizing and wrap attribute
+      (try values of hard, soft, and off to see how it affects wrapping).
+      The maximum number of characters is constrained to 200 by the maxlength attribute.
+        </textarea>
+  </div>
+</div>
