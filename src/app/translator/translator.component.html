@@ -3,9 +3,11 @@
     <div class="col-sm">
       <div class="input-group mb-3">
         <span id="translator_button_in" class="input-group-text">Input: DE</span>
-        <button id="button" type="button" class="btn btn-dark" (click)="onClickTranslate()">PRESS FOR TRANSLATION</button>
+        <button id="button" type="button" class="btn btn-dark" (click)="onClickTranslate()">PRESS FOR TRANSLATION
+        </button>
       </div>
-      <textarea id="input_textarea" placeholder="Enter your text for translation here..." type="text" class="form-control" aria-label="Default"
+      <textarea id="input_textarea" placeholder="Enter your text for translation here..." type="text"
+                class="form-control" aria-label="Default"
                 aria-describedby="inputGroup-sizing-defa"></textarea>
     </div>
     <div class="col-sm">
@@ -13,7 +15,7 @@
         <span id="translator_button_out" class="input-group-text">Output: EN</span>
       </div>
       <textarea id="output_textarea" type="text" class="form-control" aria-label="Default"
-                aria-describedby="inputGroup-sizing-defa"></textarea>
+                aria-describedby="inputGroup-sizing-defa">{{value}}</textarea>
     </div>
   </div>
 </div>

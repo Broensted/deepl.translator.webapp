@@ -6,6 +6,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TranslatorComponent } from './translator/translator.component';
 import { UiModule } from './ui/ui.module';
 import {HttpClientModule} from '@angular/common/http';
+import {TranslatorService} from './translator.service';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     NgbModule.forRoot(),
     UiModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [TranslatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
