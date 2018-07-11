@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Translation} from './translation.model';
 
+
 @Injectable()
 export class TranslatorService {
   input: string;
@@ -15,10 +16,10 @@ export class TranslatorService {
   constructor(
     private http: HttpClient) { }
 
-  getTranslation(): Observable<Translation[]> {
+  getTranslation(): Observable<Translation> {
     /*logic for translation needed*/
     this.input = (document.getElementById('input_textarea') as HTMLTextAreaElement).value;
-    return this.http.get<Translation[]>(
-      this.baseUrl + this.translate + this.input + this.source_lang + this.target_lang + this.auth_key);
+    return this.http
+      .get<Translation>(this.baseUrl + this.translate + this.input + this.source_lang + this.target_lang + this.auth_key);
   }
 }

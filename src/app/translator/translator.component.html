@@ -1,25 +1,25 @@
-<div id="translator_container" class="translator_container">
-  <div class="row">
-    <div class="col-sm">
-      <div class="input-group mb-3">
-        <span id="translator_button_in" class="input-group-text">Input: DE</span>
-        <button id="button" type="button" class="btn btn-dark" (click)="onClickTranslate()">PRESS FOR TRANSLATION
-        </button>
+<div class="bg">
+  <div id="translator_container" class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <div class="input-group mb-3">
+          <span id="translator_button_in" class="input-group-text">Input: DE</span>
+          <button id="button" type="button" class="btn btn-dark" (click)="onClickTranslate()">PRESS FOR TRANSLATION
+          </button>
+        </div>
+        <textarea id="input_textarea" placeholder="Enter your text for translation here..." autofocus="" type="text"
+                  class="form-control"></textarea>
       </div>
-      <textarea id="input_textarea" placeholder="Enter your text for translation here..." type="text"
-                class="form-control" aria-label="Default"
-                aria-describedby="inputGroup-sizing-defa"></textarea>
-    </div>
-    <div class="col-sm">
-      <div class="input-group mb-3">
-        <span id="translator_button_out" class="input-group-text">Output: EN</span>
+      <div class="col-sm">
+        <div class="input-group mb-3">
+          <span id="translator_button_out" class="input-group-text">Output: EN</span>
+        </div>
+        <!-- {{arrTranslation.translations [0].text}} wirft ERROR TypeError: "_co.arrTranslations is undefined"-->
+        <output id="output_textarea" type="text" class="form-control" >{{arrTranslations.translations[0].text}}</output>
       </div>
-      <textarea id="output_textarea" type="text" class="form-control" aria-label="Default"
-                aria-describedby="inputGroup-sizing-defa">{{value}}</textarea>
     </div>
   </div>
 </div>
-
 
 
 
