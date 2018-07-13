@@ -4,45 +4,43 @@
       <div class="col-sm">
         <div class="input-group mb-3">
           <span id="translator_button_in" class="input-group-text">Input:
-          <select class="custom-select-sm" id="select_source_lang">
-                <option value="en">EN</option>
-                <option value="de">DE</option>
-                <option value="fr">FR</option>
-                <option value="es">ES</option>
-                <option value="it">IT</option>
-                <option value="nl">NL</option>
-                <option value="pl">PL</option>
-                <option selected value="input_lang">{{arrTranslations.translations[0].detected_source_language}}</option>
+            <div class="select">
+               <select class="dropdown" id="select_source_lang">
+                  <option value="en">EN</option>
+                  <option selected value="de">DE</option>
+                  <option value="fr">FR</option>
+                  <option value="es">ES</option>
+                  <option value="it">IT</option>
+                  <option value="nl">NL</option>
+                  <option value="pl">PL</option>
               </select>
+            </div>
           </span>
-          <button id="button" type="button" class="btn btn-dark" (click)="onClickTranslate()">PRESS FOR TRANSLATION
+          <button id="button" type="button" class="btn btn-success" (click)="onClickTranslate()">PRESS FOR TRANSLATION
           </button>
         </div>
-        <textarea id="input_textarea" placeholder="Enter your text for translation here..." autofocus="" type="text"
+        <textarea id="input_textarea" placeholder="Enter your text for translation here..." autofocus type="text"
                   class="form-control"></textarea>
       </div>
       <div class="col-sm">
         <div class="input-group mb-3">
           <span id="translator_button_out" class="input-group-text">Output:
-              <select class="custom-select-sm" id="select_target_lang">
-                <option selected value="en">EN</option>
-                <option value="de">DE</option>
-                <option value="fr">FR</option>
-                <option value="es">ES</option>
-                <option value="it">IT</option>
-                <option value="nl">NL</option>
-                <option value="pl">PL</option>
-              </select>
+            <div class="select">
+                <select class="dropdown" id="select_target_lang">
+                  <option selected value="en">EN</option>
+                  <option value="de">DE</option>
+                  <option value="fr">FR</option>
+                  <option value="es">ES</option>
+                  <option value="it">IT</option>
+                  <option value="nl">NL</option>
+                  <option value="pl">PL</option>
+                </select>
+              </div>
           </span>
         </div>
         <!-- {{arrTranslation.translations [0].text}} wirft ERROR TypeError: "_co.arrTranslations is undefined"-->
-        <output id="output_textarea" type="text" class="form-control">{{arrTranslations.translations[0].text}}</output>
+        <output id="output_textarea" type="text" class="form-control">{{translation.translations[0].text}}</output>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-

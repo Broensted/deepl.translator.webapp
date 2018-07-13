@@ -8,7 +8,7 @@ import {Translation} from '../translation.model';
   styleUrls: ['./translator.component.css']
 })
 export class TranslatorComponent implements OnInit {
-  arrTranslations: Translation;
+  translation: Translation;
 
   constructor(private translatorService: TranslatorService) {
   }
@@ -16,9 +16,13 @@ export class TranslatorComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Calling the getTranslation method of the translator.service and mapping the data to
+   * the variable. Variable is needed to display the result in html.
+   */
   onClickTranslate() {
     this.translatorService.getTranslation().subscribe(
-      data => this.arrTranslations = data,
+      data => this.translation = data,
       err => console.error(err),
       () => console.log('done loading translations'));
   }
