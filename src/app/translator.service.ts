@@ -30,8 +30,14 @@ export class TranslatorService {
    * @returns {Observable<Translation>} JSON format mapped to Translation.
    */
   getTranslation(): Observable<Translation> {
-    /*logic for translation needed*/
-    this.input = (document.getElementById('input_textarea') as HTMLTextAreaElement).value;
+    /*logic for translation needed
+    * replace defines the url properly so we can translate it later.
+    * %0A is for whitespaces.
+    * %20 is for new line commands.
+    * */
+    this.input = (document.getElementById('input_textarea') as HTMLTextAreaElement).value
+      .replace(/ /g, '%20')
+      .replace(/\n/g, '%0A');
     this.target_lang_prefix = (document.getElementById('select_target_lang') as HTMLSelectElement).value;
     this.source_lang_prefix = (document.getElementById('select_source_lang') as HTMLSelectElement).value;
     return this.http
