@@ -8,6 +8,7 @@ import { UiModule } from './ui/ui.module';
 import {HttpClientModule} from '@angular/common/http';
 import {TranslatorService} from './translator.service';
 import {FormsModule} from '@angular/forms';
+import { NgxElectronModule } from 'ngx-electron';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {FormsModule} from '@angular/forms';
     NgbModule.forRoot(),
     UiModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxElectronModule
   ],
   providers: [TranslatorService],
   bootstrap: [AppComponent]
