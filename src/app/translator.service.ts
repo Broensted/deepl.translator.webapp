@@ -17,7 +17,7 @@ export class TranslatorService {
   target_lang_prefix: string;
   split_sentences = '&split_sentences=1';
   preserve_formatting = '&preserve_formatting=0';
-  auth_key = '&auth_key=43f8e228-df61-c032-5046-b21fc7d60f71';
+  auth_key = '&auth_key=YOUR_AUTH_KEY_HERE';
 
   constructor(
     private http: HttpClient) {
